@@ -160,7 +160,7 @@ async function fetchSearchWeatherInfo(city){
     grantAccessContainer.classList.remove('active');
 
     try{
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`) ;
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`) ;
 
         const data = await response.json();
         // console.log(data);
