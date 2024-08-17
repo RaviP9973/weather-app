@@ -68,7 +68,7 @@ async function fetchUserWeatherInfo(coordinates){
     loadingScreen.classList.add('active');
 
     try{
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${lat},${lon}`) ;
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${lat},${lon}`) ;
         const data = await response.json();
         // console.log(data);
         loadingScreen.classList.remove('active');
